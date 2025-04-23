@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amritesh Tiwari Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="theme-transition" id="transitionEffect"></div>
+  <nav class="navbar">
+    <div class="logo">Amritesh</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#reachme">Contact</a>
+    </div>
+    <div class="right-controls">
+      <button class="toggle-btn" id="themeToggle">
+        ☀️
+      </button>
+    </div>
+  </nav>
+  <div id="particles-js"></div>
+
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <h3 class="greeting">Hi there 👋</h3>
+      <h1>
+        <span class="fixed-text">I'm</span>
+        <span class="typewriter-text" id="typewriterText"></span>
+        <span class="cursor">|</span>
+      </h1>
+    </div>
+    <div class="hero-right">
+      <img src="/test3/images/home-right.png" alt="Amritesh Tiwari" class="profile-img" />
+    </div>
+  </section>
+
+  <!-----------------------------------------------About Me ---------------------------------------------------------->
+  <section class="about-me">
+    <div class="container">
+      <h1 id="about">About Me</h1>
+
+      <div class="about-grid">
+        <!-- Left: Image -->
+        <div class="left-section">
+          <div class="image-card">
+            <img src="my-photo.jpg" alt="Your Portrait" />
+          </div>
+        </div>
+
+        <!-- Right: About Details + Button -->
+        <div class="right-section">
+          <p>I’m a passionate problem-solver with a strong drive to create innovative solutions. From designing user-friendly interfaces to solving complex technical challenges, I thrive on making things work.</p>
+          <p>My experience spans both technology and public service, combining strategic thinking with a deep understanding of user needs. I continuously adapt, learn, and evolve with each project I undertake.</p>
+          <p>I believe in meaningful work that blends purpose and impact—and I bring this energy to every endeavor I take on.</p>
+
+          <!-- Centered Download Button -->
+          <div class="download-btn-wrapper">
+            <a href="/test3/files/Amritesh CV.pdf" target="_blank">
+              <button class="download-btn">Download CV</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----------------------------------skillls ------------------------------------->
+  <main>
+    <h1 id="skills" class="heading">Skills</h1>
+    <div class="toggle-container">
+      <span class="toggle active" data-type="technical">Technical Skills</span>
+      <span class="toggle" data-type="soft">Soft Skills</span>
+    </div>
+    <div id="skills-puzzle" class="skills-grid"></div>
+  </main>
+
+  <!----------------------------------------Resume ----------------------------------->
+  <main class="main-container">
+    <h1 id="resume" class="main-title">Resume</h1>
+    <div class="resume-wrapper">
+      <div class="left-tabs">
+        <ul class="tab-list">
+          <li class="tab active" data-section="experience">Experience</li>
+          <li class="tab" data-section="projects">Projects</li>
+          <li class="tab" data-section="education">Education</li>
+          <li class="tab" data-section="Certifications">Certifications</li>
+        </ul>
+      </div>
+
+      <div class="right-content">
+        <section id="experience" class="content-section active">
+            <div class="tile">
+          <h2>Intern – Gokboru Tech</h2>
+          <p><strong>Duration:</strong> Summer 2024</p>
+          <p><strong>Location:</strong> Remote / On-site (please confirm)</p>
+          <p><strong>Project:</strong> Serverless E-book Reader</p>
+          <p><strong>Role & Responsibilities:</strong></p>
+          <ul>
+            <li>Architected and developed a web-based e-book platform using AWS serverless infrastructure.</li>
+            <li>Configured AWS S3 buckets for scalable book storage.</li>
+            <li>Wrote and deployed Lambda functions to manage backend processes such as:
+              <ul>
+                <li>Fetching book content</li>
+                <li>Tracking reading progress</li>
+                <li>Search and filtering</li>
+              </ul>
+            </li>
+            <li>Integrated API Gateway to expose REST APIs to the frontend.</li>
+            <li>Ensured CORS configurations and IAM roles were correctly set for security.</li>
+          </ul>
+          <p><strong>Outcome:</strong></p>
+          <ul>
+            <li>Delivered a fully functional prototype, demonstrating knowledge of modern cloud-native practices.</li>
+            <li>Reduced backend costs by 60% using serverless instead of traditional hosting.</li>
+            <li>Gained real-world experience in DevOps, Cloud Architecture, and User-Centered Design.</li>
+          </ul>
+            </div>
+        </section>
+        <section id="projects" class="content-section">
+            <div class="tile">
+          <h2>1. Indian Railways Ticket Booking System (2023)</h2>
+          <p><strong>Platform:</strong> Web (Frontend only)</p>
+          <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Bootstrap</p>
+          <ul>
+            <li>Created a clean and responsive interface mimicking Indian Railways ticket booking flow.</li>
+            <li>Included search filters for train name, date, origin, and destination.</li>
+            <li>Built a seat availability simulation and basic price calculation logic.</li>
+            <li>Applied frontend form validation and animations using vanilla JS.</li>
+          </ul>
+          <p><strong>Learning Outcome:</strong></p>
+          <ul>
+            <li>Strengthened core frontend development skills.</li>
+            <li>Understood UI/UX principles and responsive web design techniques.</li>
+          </ul>
+            </div>
+            <div class="tile">
+          <h2>2. Serverless E-Book Reader </h2>
+          <p><strong>Tech Stack:</strong> AWS Lambda, API Gateway, S3, JavaScript, Bootstrap</p>
+          <ul>
+            <li>Real-time loading of book content directly from S3 storage.</li>
+            <li>Each reader session is logged via API calls (usage analytics).</li>
+            <li>Added bookmarking and simple search functionality.</li>
+            <li>UI focused on reading comfort: night mode toggle, font size adjustment, etc.</li>
+          </ul>
+          <p><strong>Advanced Concepts Used:</strong></p>
+          <ul>
+            <li>IAM roles for resource access</li>
+            <li>API rate limiting</li>
+            <li>JSON-based dynamic content rendering</li>
+          </ul>
+            </div>
+        </section>
+
+        <section id="education" class="content-section">
+            <div class="tile">
+          <p><strong>Undergraduate Degree</strong></p>
+          <p><strong>Field:</strong> Likely B.Tech or B.Sc. in Computer Science and Engenirring </p>
+          <p><strong>Institution:</strong> Lovely Proffesional University </p>
+          <p><strong>Status:</strong> Ongoing (as of 2025)</p>
+            </div>
+            <div class="tile">
+          <h3>Secondary Schooling</h3>
+          <p><strong>Board:</strong> CBSE</p>
+          <p><strong>Key Subjects:</strong> Physics, Chemistry, Mathematics, Physical Education</p>
+          <p><strong>12th Results:</strong>78%</p>
+            </div>
+            <div class="tile">
+          <h3>Primary Schooling</h3>
+          <p><strong>Board:</strong> CBSE</p>
+          <p><strong>10th Results:</strong> 92%</p>
+            </div>
+        </section>
+        <!------------------------Cetifications-------------------------------------->
+        <section id="Certifications" class="content-section">
+          <div class="tile">
+        <p><strong>Cyber Security and Privacy</strong></p>
+        <p><strong>From:</strong> NPTEL ONLINE CERTIFICATION </p>
+        <p><strong>Status:</strong> Completed (2024) </p>
+        <p><strong><div class="download-btn-wrapper">
+          <a href="/test3/files/Cyber Security and Privacy- nptel.pdf" target="_blank">Certificate</a></strong></p></div>
+          </div>
+          <div class="tile">
+            <p><strong>AWS Cloud Computing training</strong></p>
+            <p><strong>From:</strong>Gokboru Tech Pvt Ltd</p>
+            <p><strong>Status:</strong> Completed (2024)</p>
+            <p><strong><div class="download-btn-wrapper">
+              <a href="/test3/files/Amritesh Tiwari.pdf" target="_blank">Certificate</a></strong></p></div>
+              </div>
+    
+      </section>
+      </div>
+    </div>
+  </main>
+
+  <!------------------------------------------------------------Contact us ---------------------------------------->
+  <section class="contactus-section">
+    <h2 id="reachme" class="section-title">Contact <span>US</span></h2>
+    
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form class="contact-form" action="https://formsubmit.co/amriteshtiwari2003@gmail.com" method="POST">
+        <!-- Replace with your email -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Right Side Image or GIF -->
+      <div class="contact-visual">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjU4d20yNGY4cndnank0eWx2N2R4OHN6eHBqdnV4MWloc2FwZjA3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sJFJMtc02OUSaReO0M/giphy.gif" alt="Message Gif">
+      </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <!-- Social Media Links (with your own icons) -->
+<div class="social-icons">
+    <a href="https://github.com/Amritesh2501" target="_blank" title="GitHub">
+      <img src="icon/github-icon.png" alt="GitHub Icon" class="social-icon-img">
+    </a>
+    <a href="https://www.instagram.com/amritesh_2003" target="_blank" title="Instagram">
+      <img src="icon/instagram.png" alt="Instagram Icon" class="social-icon-img">
+    </a>
+    <a href="https://www.linkedin.com/in/tiwari-amritesh/" target="_blank" title="LinkedIn">
+      <img src="icon/linkedin.png" alt="LinkedIn Icon" class="social-icon-img">
+    </a>
+    <a href="https://steamcommunity.com/id/amritesh2501" target="_blank" title="Steam">
+      <img src="icon/steam.png" alt="Steam Icon" class="social-icon-img">
+    </a>
+    <a href="https://discord.com/users/amritesh_" target="_blank" title="Discord">
+      <img src="icon/discord.png" alt="Discord Icon" class="social-icon-img">
+    </a>
+  </div>
+  
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
